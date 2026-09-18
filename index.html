@@ -39,6 +39,13 @@
         ul {
             padding-left: 20px;
         }
+        li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: underline;
+        }
         .footer {
             margin-top: 36px;
             padding-top: 18px;
@@ -52,36 +59,49 @@
     <div class="container">
         <h1>Privacy Policy</h1>
         <p><strong>App:</strong> Tasbeeh Counter - Zikr & Dhikr</p>
-        <p><strong>Effective Date:</strong> September 10, 2026</p>
+        <p><strong>Effective Date:</strong> September 18, 2026</p>
 
         <h2>1. Overview</h2>
-        <p>We respect your privacy and are committed to protecting it. <strong>Tasbeeh Counter - Zikr & Dhikr</strong> is designed as a standalone, distraction-free utility application to assist users with their daily dhikr, tasbeeh, and spiritual supplications. We believe in minimal permissions and zero invasive tracking.</p>
+        <p>We respect your privacy and are committed to protecting it. <strong>Tasbeeh Counter - Zikr & Dhikr</strong> is designed to assist users with their daily dhikr, tasbeeh, and spiritual supplications. This policy outlines how information is handled when you use the application, participate in testing, or interact with our integrated services.</p>
 
-        <h2>2. Data Collection and Usage</h2>
-        <p>Our application operates locally on your mobile device:</p>
+        <h2>2. Data Collection and Processing</h2>
+        <p>The application processes operational data as follows:</p>
         <ul>
-            <li><strong>No Personal Information Collected:</strong> We do not collect, transmit, store, or share any personal identity details such as names, email addresses, phone numbers, contacts, or photos.</li>
-            <li><strong>No Account Required:</strong> You do not need to create an account, register, or log in to use this app.</li>
-            <li><strong>Local Storage Only:</strong> All counter values, prayer counts, custom target settings, and user preferences are stored exclusively on your device's local memory (offline storage). This data never leaves your device.</li>
+            <li><strong>Tester Verification (Name):</strong> During testing tracks and verification workflows, the app prompts participants to voluntarily submit their name. This name, alongside a creation timestamp, is securely sent to and stored in Google Cloud Firestore for tester verification and management.</li>
+            <li><strong>Local Storage:</strong> Routine counter tallies, custom target preferences, haptic configurations, and tester verification flags are stored locally on your device using SharedPreferences.</li>
+            <li><strong>App Performance & Diagnostics:</strong> The app utilizes Google Analytics for Firebase to collect aggregate diagnostics, app stability metrics, interaction events, and approximate device specifications (e.g., OS version, device model).</li>
+            <li><strong>No Sensitive Personal Records:</strong> We do not collect passwords, physical addresses, contact lists, GPS locations, financial details, or media files.</li>
         </ul>
 
-        <h2>3. Device Permissions</h2>
-        <p>To provide a tactile and responsive counting experience, the app may request basic device hardware access:</p>
+        <h2>3. Third-Party Services</h2>
+        <p>We integrate services provided by Google LLC to support cloud data storage, database synchronization, and performance analytics:</p>
         <ul>
-            <li><strong>Vibration (Haptics):</strong> Used exclusively to deliver subtle tactile feedback when you increment, complete, or reset a counter. This permission does not access private files or personal records.</li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+            <li><a href="https://cloud.google.com/firestore/docs/security/overview" target="_blank" rel="noopener noreferrer">Google Cloud Firestore</a></li>
         </ul>
 
-        <h2>4. Third-Party Services and Analytics</h2>
-        <p>The application does not use third-party analytics platforms, behavioral trackers, or intrusive advertising SDKs that harvest user activity or device identifiers.</p>
+        <h2>4. Device Permissions</h2>
+        <p>To provide a tactile and responsive counting experience, the app requests minimal hardware access:</p>
+        <ul>
+            <li><strong>Vibration (Haptics):</strong> Used exclusively to deliver tactile feedback when counting, completing cycles, or resetting counts. It does not access private files or identify you.</li>
+            <li><strong>Internet Access:</strong> Required strictly for communicating with Firebase backends (verifying test participation and logging diagnostic metrics).</li>
+        </ul>
 
-        <h2>5. Children's Privacy</h2>
-        <p>The app does not target, solicit, or collect personal data from anyone, including children under the age of 13. Since no personal data is collected, the application complies with child online privacy regulations.</p>
+        <h2>5. Data Retention and Deletion</h2>
+        <p>Locally stored counter configurations remain on your device until cleared or uninstalled. Information stored in Cloud Firestore (such as tester verification names) is retained for testing assessment and operational tracking. Users or testers wishing to have their submitted name or record deleted may contact us directly via email.</p>
 
-        <h2>6. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy periodically to reflect app updates or regulatory standards. Any changes will be posted on this page with an updated effective date.</p>
+        <h2>6. Security</h2>
+        <p>All network transmissions between the application and Google Cloud infrastructure are encrypted in transit using standard HTTPS/TLS protocols.</p>
 
-        <h2>7. Contact Us</h2>
-        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, feel free to contact us at:</p>
+        <h2>7. Children's Privacy</h2>
+        <p>The app does not knowingly solicit or collect personal information from children under the age of 13. If you believe an unauthorized minor has submitted personal information through the app, please reach out so we can promptly delete the entry.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically to reflect app enhancements or policy updates. Any modifications will appear directly on this webpage with an updated effective date.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions, deletion requests, or feedback regarding this Privacy Policy, please contact us at:</p>
         <p><strong>Email:</strong> azamdeveloper.app@gmail.com</p>
 
         <div class="footer">
